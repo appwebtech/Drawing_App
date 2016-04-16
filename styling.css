@@ -1,0 +1,120 @@
+/*
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+   
+   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+   Joseph M Mwania CEO the appwebtech 
+    
+
+*/
+
+/*Center all elelemnts and add bg image*/
+
+body{
+	text-align: center;
+	background: url(images/paintbg.jpg) center center fixed;
+	background-size: cover;
+}
+#header{
+	background: linear-gradient(white, rgba(67, 169, 228, 0.5));
+	background: -webkit-linear-gradient(white, rgba(67, 169, 228, 0.5));
+	background: -moz-linear-gradient(white, rgba(67, 169, 228, 0.5));
+    background: -o-linear-gradient(white, rgba(67, 169, 228, 0.5));
+	background: -ms-linear-gradient(white, rgba(67, 169, 228, 0.5));
+
+	height: 80px;
+	width: 500px;
+	margin: 10px auto;
+	font-size: 3em;
+	color: #fff;
+	line-height: 80px;
+}
+/*inputs container*/
+.inputContainer{
+	width: 200px;
+	margin: 0 auto;
+}
+
+/*color input, line thickness, slider*/
+
+.input{
+	height: 30px;
+	font-size: 1.3em;
+}
+#slider{
+	margin: 10px auto;
+}
+#circle{
+	height: 3px; 
+	width: 3px;
+	border-radius: 50%;
+	background: black;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transform: -webkit-translate(-50%, -50%);
+	transform: -o-translate(-50%, -50%);
+	transform: -ms-translate(-50%, -50%);
+	transform: -moz-translate(-50%, -50%);
+}
+#thicknessInput{
+	position: relative;
+	
+}
+
+/*canvas container*/
+#container{
+	width: 500px;
+    height: 400px;
+	border: 1px solid rgba(122, 174, 229, 0.5);
+	margin: 10px auto;
+}
+
+#paint{
+	background-color: #fff;
+	cursor: crosshair;
+}
+
+.inputContainer2{
+	width: 399px;
+	margin: 0 auto;
+}
+
+/*Erase save reset buttons*/
+
+.input2{
+	width: 133px;
+	color: #5bb4e7;
+	font-size: 1.3em;
+	float: left;    /*This will float them horizontally*/
+}
+.button{
+	background: #fff;
+	height: 50px;
+	padding: 10px;
+	border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0px 4px rgba(0,0,0,0.2);
+	-webtkit-box-shadow: 0px 4px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 4px rgba(0,0,0,0.2);
+}
+.button:hover{
+	color: white;
+	background:linear-gradient(white, rgba(67, 169, 228, 0.5));
+	-webkit-background:linear-gradient(white, rgba(67, 169, 228, 0.5));
+	-moz-background:linear-gradient(white, rgba(67, 169, 228, 0.5));
+	-o-background:linear-gradient(white, rgba(67, 169, 228, 0.5));
+	-ms-background:linear-gradient(white, rgba(67, 169, 228, 0.5));
+}
+.button:active{   /*We wanna make the button move down when we click it*/
+	top: 4px;
+	
+}
+
+.eraseMode{
+	background-color: red;
+	color: white;
+}
